@@ -1,0 +1,66 @@
+ <form [formGroup]="foodProduct" (ngSubmit)="onClickSubmit(foodProduct)">
+    <div class="container">
+      <div class="title">
+        ADD A PRODUCT
+      </div>
+      <hr>
+      <div class="column">      
+      <div class="fields">
+      <label for="name"><b>PRODUCT NAME</b></label>
+      <input type="text"  formControlName="name" class="input">
+      </div>
+
+      <div class="fields">
+      <label for="quantity"><b>QUANTITY</b></label>
+      <input type="number" formControlName="quantity" class="input" min="0">
+      </div>
+
+      <div class="fields">
+      <label for="price"><b>PRICE(TOTAL)</b></label>
+      <input type="number" formControlName="price" class="input" min="0">
+      </div>
+
+      <div class="fields">
+      <label for="color"><b>COLOR</b></label>
+      <input type="text" formControlName="color" class="input">
+      </div>
+      <!-- contains egg toggle switch -->
+
+      <div class="fields">
+      <label for="manufactureDate"><b>MANUFACTURE DATE</b></label>
+      <input type="date"  formControlName="manufactureDate" class="input">
+      </div>
+
+      <div class="fields">
+      <label for="expiryDate"><b>EXPIRY DATE</b></label>
+      <input type="date"  formControlName="expiryDate" class="input">
+      </div>
+
+      <div class="fields">
+      <label for="bestBefore"><b>BEST BEFORE</b></label>
+      <input type="text" formControlName="bestBefore" class="input">
+      </div>
+
+      <input type="hidden" formControlName="manufacturerId" value="smith1234">
+    </div>
+
+    <div class="column">
+        <div class="fields">
+            <label for="name"><b>PRODUCT NAME</b></label>
+            <input type="text"   class="input">
+            </div>
+      
+            <div class="fields">
+            <label for="quantity"><b>QUANTITY</b></label>
+            <input type="number" class="input" min="0">
+            </div>
+          <!-- contains egg toggle switch -->
+      
+    </div>
+
+      <div class="submit">
+      <button type="submit" class="button">ADD</button>
+      </div>
+    </div>
+  </form>
+

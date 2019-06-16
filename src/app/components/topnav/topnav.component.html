@@ -1,0 +1,14 @@
+<body>
+    <div class="nav">
+      <a routerLink='/home'>HOME</a> 
+      <a routerLink='/addproduct'>ADD PRODUCT</a>
+      <a routerLink='/viewproducts'>ALL PRODUCTS</a>
+      <a routerLink='/login'>LOGIN</a>
+        <div class="search">
+            <form [formGroup]="product">
+                <input type="text" placeholder="Search for a product..." id="productId" formControlName="productId" required>
+                <i class="fa fa-search search-icon" id="submitButton" aria-hidden="true" (click)="navigate(product)"></i>
+            </form>
+        </div>
+    </div>
+</body>

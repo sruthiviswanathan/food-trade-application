@@ -1,0 +1,41 @@
+.mat-dialog-title {
+    text-align: center;
+    color : purple;
+
+}
+
+mat-dialog-content {
+    padding: 10px 10px !important;
+}
+
+mat-card-content {
+    font-size: 20px !important;
+    height: 150px !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: purple !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: purple !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: purple !important;;
+  }
+
+  .button {
+      background-color:purple;
+      color:white;
+      float:right;
+  }
+
+  .cancelbutton {
+    background-color:red;
+    color:white;
+    float: right;
+}

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://st4.depositphotos.com/12291012/19627/i/1600/depositphotos_196274466-stock-photo-chocolate-baked-doughnuts-violet-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

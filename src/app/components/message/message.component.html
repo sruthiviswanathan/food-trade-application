@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>TRADE THIS PRODUCT</h1> 
+<mat-dialog-content> 
+    <mat-card style="align-items:center;">
+    <mat-card-content>
+        <form>
+          <mat-form-field class="a">
+            <input  matInput  placeholder="New-Owner-ID" [(ngModel)]="newOwnerId"  type="text" name="text"  required>
+          </mat-form-field>
+      </form>
+    <mat-card-actions>
+      <button  mat-raised-button (click)="closeMe()" class = "cancelbutton">CLOSE</button>
+      <button  mat-raised-button (click)="trade()"  class="button">TRADE</button>
+  </mat-card-actions>
+</mat-card-content>
+</mat-card>
+ </mat-dialog-content>
+
+
+
